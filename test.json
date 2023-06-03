@@ -1,91 +1,77 @@
-
 {
+  "_id": {
+    "$oid": "647a58dac68f3075ac294002"
+  },
   "headers": {
     "Accept": "application/json",
-    "X-API-Token": "fb95cc43193c5ce2db5907627eaf3146a6921583"
+    "X-API-Token": "df319e26d494dba1ca58ee9ea0ec2836e9ad8ee0"
+  },
+  "invalid": {
+    "Accept": "application/json",
+    "X-API-Token": "df319e26d494dba1ca58ee9ea0ec2836e9ad8ew1"
   },
   "prueba_1": {
     "expected": "rikarudok@gmail.com"
   },
   "prueba_2": {
-    "expected": "MAURICIO AVENDAÑO GONZALEZ"
+    "expected": "Unauthorized"
   },
   "prueba_3": {
-    "expected": "mavendanog@unicesar.edu.co"
+    "expected": "Unauthorized"
   },
   "prueba_4": {
     "payload": {
-      "display_name": "organizacionPrueba",
-      "name": "pruebaOrg12345"
+      "udid": "1",
+      "model": "Ricardo",
+      "os_build": "string",
+      "os_version": "string",
+      "serial": "string",
+      "imei": "string",
+      "owner_id": "string"
     },
-    "expected": "organizacionPrueba"
+    "expected": "Ricardo"
   },
   "prueba_5": {
-    "payload": {
-      "display_name": "organizacionPrueba",
-      "name": "pruebaOrg12345"
-    },
-    "expected": "pruebaOrg12345"
+    "payload": {},
+    "expected": "Missing required body parameter \"body\""
   },
   "prueba_6": {
     "payload": {
-      "display_name": "organizacionPrueba",
-      "name": "pruebaOrg12345"
+      "udid": "1",
+      "model": "Ricardo",
+      "os_build": "string",
+      "os_version": "string",
+      "serial": "string",
+      "imei": "string",
+      "owner_id": "string"
     },
-    "expected": 201
+    "expected": "The authenticated user is not allowed to register a device for a different user."
   },
   "prueba_7": {
-    "payload": {
-      "description": "descripcion_prueba",
-      "release_type": "Release123",
-      "display_name": "app para testing DPP",
-      "name": "AppTestingDDP",
-      "os": "Android",
-      "platform": "Java"
-    },
-    "expected": 201
+    "expected": "1"
   },
   "prueba_8": {
-    "payload": {
-      "description": "descripcion_prueba",
-      "release_type": "Release123",
-      "display_name": "app para testing DPP",
-      "name": "AppTestingDDP",
-      "os": "Android",
-      "platform": "Java"
-    },
-    "expected": "app para testing DPP"
+    "expected": "Unauthorized"
   },
   "prueba_9": {
-    "payload": {
-      "description": "descripcion_prueba",
-      "release_type": "Release123",
-      "display_name": "app para testing DPP",
-      "name": "AppTestingDDP",
-      "os": "Android",
-      "platform": "Java"
-    },
-    "expected": 401,
-    "unauthorized_token": "token_no_autorizado"
+    "expected": 401
   },
   "prueba_10": {
-    "expected": 401,
-    "unauthorized_token": "token_no_autorizado"
+    "expected": "Ricardo"
   },
   "prueba_11": {
-    "expected": 0
+    "expected": "Unauthorized"
   },
   "prueba_12": {
-    "expected": 200
+    "expected": "not_found"
   },
   "prueba_13": {
-    "expected": 200
+    "expected": {}
   },
   "prueba_14": {
-    "expected": 0
+    "expected": "Unauthorized"
   },
   "prueba_15": {
-    "expected": 401,
-    "unauthorized_token": "token_no_autorizado"
+    "expected": "not_found"
   }
 }
